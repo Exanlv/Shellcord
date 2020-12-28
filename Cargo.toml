@@ -9,3 +9,5 @@ edition = "2018"
 [dependencies]
 serenity = { default-features = false, features = ["client", "gateway", "rustls_backend", "model"] }
 tokio = { version = "0.2", features = ["macros"] }
+regex = "1"
+serde_json = { version = "1.0", default-features = false, features = ["alloc"] }

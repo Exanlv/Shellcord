@@ -1,11 +1,5 @@
 #!/bin/bash
-for ARGUMENT in "$@"
-do
-    KEY=$(echo $ARGUMENT | cut -f1 -d=)
-    VALUE=$(echo $ARGUMENT | cut -f2 -d=)   
 
-    declare $KEY="$VALUE";
-done
-
-echo SEND_MESSAGE $CHANNEL_ID pong!;
-echo SEND_MESSAGE $CHANNEL_ID pang!;
+if [ "$CONTENT" = "ping" ]; then
+    echo "SEND_MESSAGE $CHANNEL_ID pong!"
+fi
