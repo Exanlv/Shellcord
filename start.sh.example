@@ -1,0 +1,2 @@
+export DISCORD_TOKEN="";
+cargo run;
